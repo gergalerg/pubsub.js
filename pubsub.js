@@ -1,8 +1,11 @@
 'use strict'
 var EventEmitter = require('events');
 var net = require('net');
+
 class Events extends EventEmitter {};
+
 var channel = new Events();
+
 channel.clients = {};
 channel.subscriptions = {};
 
